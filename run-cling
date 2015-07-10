@@ -1,0 +1,7 @@
+#!/bin/sh
+docker run -i \
+    -v $(pwd):/work \
+    -u $(id -u) \
+    -w /work \
+    -t tmbdev/cling-local \
+    cling
